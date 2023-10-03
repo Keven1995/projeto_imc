@@ -1,0 +1,111 @@
+:root {
+    --color-white: #fff;
+    --color-pink: #d12f7a;
+    --color-blue: #073fcc;
+    --color-black: #0c0c0c;
+    --color-purple: #5f01ac;
+    --color-ciano: #6ec6ca;
+    --color-lilas: #ccabd8;
+    --color-roxofosco: #8474a1;
+    --color-cianofosco: #08979d;
+    --color-verdeescuro: #055b5c;
+    --color-sombra: #0000003b;
+    --color-ciano-sombra: #6ec5ca7e;
+}
+
+body{
+    margin: 0; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-purple);
+    width: 400px;
+    height: 600px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    box-shadow: var(--color-black);
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./img/GanhoPeso.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 2.5rem serif;
+    color: var(--color-white);
+    border-bottom: solid 5px var(--color-white);
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    font: bold 1.5rem serif;
+    text-align: center;
+}
+
+.input label {
+    font: bold 1.5rem serif;
+    color: var(--color-white);
+}
+
+.calcular {
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem serif;
+    background: var(--color-white);
+    color: var(--color-purple);
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    font: italic 1.5rem serif;
+    box-shadow: var(--color-white);
+    background: var(--color-roxofosco);
+    color: var(--color-white);
+    padding: 20px;
+    box-sizing: border-box;
+    user-select: none;
+}
