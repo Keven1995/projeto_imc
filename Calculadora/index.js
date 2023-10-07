@@ -15,17 +15,17 @@ function imc(){
         let classificacao = "";
 
         if (valorImc <18.5){
-            classificacao = "Abaixo do peso. Cuide da saúde";
+            classificacao = "Abaixo do peso. Cuide da saúde!";
         } else if (valorImc <25){
             classificacao = "com peso ideal";
         } else if (valorImc <30){
-            classificacao = "Acima do peso. Cuide da saúde";
+            classificacao = "Acima do peso. Cuide da saúde!";
         } else if (valorImc <35){
-            classificacao = "Obesidade Grau 1. Cuide da saúde";
+            classificacao = "Obesidade Grau 1. Cuide da saúde!";
         } else if (valorImc <40){
-            classificacao = "Obesidade Grau 2. Cuide da saúde";
+            classificacao = "Obesidade Grau 2. Cuide da saúde!";
         } else {
-            classificacao = "Obesidade Grau 3. Cuide da saúde";
+            classificacao = "Obesidade Grau 3. Cuide da saúde!";
         }
 
         resultado.textContent =`${nome} seu IMC é ${valorImc} e você está ${classificacao}`;
